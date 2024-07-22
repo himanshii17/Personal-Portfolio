@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1a724a4aaf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- home page  -->
+  <!-- navbar -->
+  <div class="full">
+    <nav id="navbar">
+      <div id="container">
+        <h1 class="logo">PORTFOLIO</h1>
+      </div>
+      <ul id="sidemenu" class="list-class">
+        <li><a href="#container">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+    </nav>
+    <!-- image -->
+    <div class="container1">
+      <div class="header-text">
+        <p>Software Engineer</p>
+        <h1>Hi,I am <span>Himanshi</span><br>Sharma from India</h1>
+      </div>
+
+      <div id="image_bitemogi">
+        <img src="hi.png" alt="i am himanshi">
+      </div>
+    </div>
+  </div>
+  <!-- about section -->
+  <div id="about">
+    <div class="container2">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="image.jpeg" alt="himanshi">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>My name is Himanshi Sharma and i am an undergraduate student pursuing Btech CSE from DIT University,
+            Dehradun.Currently i have my hands on real time projects in domains including java development and full stack
+            development.I have keen interest in programming and looking forward for great opportunities.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>JAVA</span><br></li>
+            <li><span>Javascript</span><br></li>
+            <li><span>MYSQL</span><br></li>
+            <li><span>React(basics)</span><br></li>
+            <li><span>Leadership</span><br></li>
+            <li><span>Management</span><br></li>
+          </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>May'24 - Jun'24</span><br>Oasis Infobyte (Web Development and designing Internship)</li>
+              <!-- <li><span>Current</span><br>full stack and Devops training in dit university</li>
+              <li><span>Current</span><br>full stack training in dit university</li> -->
+            </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>GRD Academy</span><br>Class 12(2021) Aggregate:87.6% </li>
+                <li><span>GRD Academy</span><br>Class 10(2019) Aggregate:90% </li>
+                <li><span>DIT University</span>Btech in computer Science(2021-2025) CGPA: 9.35<br></li>
+              </ul>
+              </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------------- services ---------------------------->
+  <div id="services">
+    <div class="contain">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>Ready to provide web development services, creating dynamic and responsive websites with a focus on user experience, performance optimization, and modern design practices.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-magnifying-glass-chart"></i>
+          <h2>Java Development</h2>
+          <p>Providing Java development services, delivering robust and efficient software solutions by implementing best coding practices and ensuring high performance and reliability.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Data Analytics</h2>
+          <p>Currently an enthusiast and working on the concepts</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------portfolio--------------- -->
+  <div id="portfolio">
+    <div class="contain">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="image1.png">
+          <div class="layer">
+            <h3>Brick Breaker</h3>
+            <p>This is a Java implementation of the classic arcade game Brick Breaker. The game involves breaking bricks using a paddle and a ball, with the goal of clearing all the bricks to win the game.</p>
+            <a href="https://github.com/himanshii17/Brick-Breaker"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="web-development-img3.webp">
+          <div class="layer">
+            <h3>Personal Portfolio</h3>
+            <p>Developed a personal portfolio website showcasing my skills, projects, and achievements, utilizing modern web technologies and design principles for a professional online presence.</p>
+            <a href="https://github.com/himanshii17/Personal-Portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="todo.webp">
+          <div class="layer">
+            <h3>TO-DO List</h3>
+            <p>Developed a to-do list application using React, enabling users to efficiently manage tasks with a clean, interactive interface and real-time updates.</p>
+            <a href="https://github.com/himanshii17/TO-DO-List/tree/main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- --------------contact---------- -->
+  <div id="contact">
+    <div class="contain">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>shimanshi871@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>7017748803</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/himanshi-sharma-9623b8235/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <a href="Himanshi sharma_resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Himanshi . All Rights Reserved</p>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <!-- --------------sidemenu----------------- -->
+  <script>
+    var sidemen = document.getElementById("sidemenu");
+    function openmenu(){
+      sidemen.style.right = "0";
+    }
+    function closemenu(){
+      sidemen.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzTmsZnyCCsPvWSHQw7Ru_ZlS1El4fWAykeguitkMEJo1F97eRSKI7ieb5eOBJlnaPM/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML="Your response has been submitted successfully"
+          setTimeout(function(){
+            msg.innerHTML=""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
