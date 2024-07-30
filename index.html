@@ -22,7 +22,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Contact</a></li> 
         <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
       </ul>
       <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -31,7 +31,18 @@
     <!-- image -->
     <div class="container1">
       <div class="header-text">
-        <p>Software Engineer</p>
+        <div class="drop-words-container">
+          <div class="letter" data-letter="D">D</div>
+          <div class="letter" data-letter="E">E</div>
+          <div class="letter" data-letter="V">V</div>
+          <div class="letter" data-letter="E">E</div>
+          <div class="letter" data-letter="L">L</div>
+          <div class="letter" data-letter="O">O</div>
+          <div class="letter" data-letter="p">P</div>
+          <div class="letter" data-letter="E">E</div>
+          <div class="letter" data-letter="R">R</div>
+      </div>
+        <!-- <p>Software Engineer</p> -->
         <h1>Hi,I am <span>Himanshi</span><br>Sharma from India</h1>
       </div>
 
@@ -49,9 +60,13 @@
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
-          <p>My name is Himanshi Sharma and i am an undergraduate student pursuing Btech CSE from DIT University,
-            Dehradun.Currently i have my hands on real time projects in domains including java development and full stack
-            development.I have keen interest in programming and looking forward for great opportunities.
+          <p>My name is Himanshi Sharma, and I am an undergraduate student pursuing a Bachelor of Technology in Computer Science and Engineering from DIT University, Dehradun. My academic journey has equipped me with a solid foundation in various aspects of computer science, and I am particularly passionate about programming and software development.
+
+            Currently, I am actively working on real-time projects that span multiple domains, including Java development and full-stack development. These hands-on experiences have honed my technical skills and provided me with a deeper understanding of the software development lifecycle.
+            
+            In addition to my technical pursuits, I am constantly exploring new technologies and methodologies to stay updated with industry trends. My keen interest in programming drives me to continuously learn and improve, aiming to solve complex problems and create efficient, scalable solutions.
+            
+            I am eager to apply my knowledge and skills in professional settings, seeking opportunities that challenge me and contribute to my growth as a developer. I look forward to collaborating with like-minded professionals and making meaningful contributions to innovative projects.
           </p>
           <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -62,8 +77,8 @@
           <ul>
             <li><span>JAVA</span><br></li>
             <li><span>Javascript</span><br></li>
-            <li><span>MYSQL</span><br></li>
-            <li><span>React(basics)</span><br></li>
+            <li><span>SQL</span><br></li>
+            <li><span>React JS(basics)</span><br></li>
             <li><span>Leadership</span><br></li>
             <li><span>Management</span><br></li>
           </ul>
@@ -129,11 +144,11 @@
           </div>
         </div>
         <div class="work">
-          <img src="web-development-img3.webp">
+          <img src="game-bg.jpg">
           <div class="layer">
-            <h3>Personal Portfolio</h3>
-            <p>Developed a personal portfolio website showcasing my skills, projects, and achievements, utilizing modern web technologies and design principles for a professional online presence.</p>
-            <a href="https://github.com/himanshii17/Personal-Portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <h3>Survivor Nobi</h3>
+            <p>Survivor Nobi is an immersive Java game developed using Swing and OOP principles, featuring player navigation, collision detection, threading, and animations to face three menacing spiders. This course covers game fundamentals, GUI development, event binding, and more, all within the Eclipse IDE..</p>
+            <a href="https://github.com/himanshii17/Survivor-Nobi"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
         <div class="work">
@@ -178,6 +193,16 @@
   <div class="copyright">
     <p>Copyright © Himanshi . All Rights Reserved</p>
   </div>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const letters = document.querySelectorAll(".letter");
+    letters.forEach((letter, index) => {
+        setTimeout(() => {
+            letter.setAttribute("data-dropped", "true");
+        }, index * 200); // Adjust the timing to control the drop speed
+    });
+});
+  </script>
   <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
