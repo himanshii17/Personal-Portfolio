@@ -492,10 +492,10 @@ nav .fa-solid{
         margin-bottom: 11px;
     }
     .about-col-2 p{
-        font-family: cursive;
+         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-weight: 40;
         font-size: 0.6rem;
-/*         font-stretch:extra-condensed; */
+        font-stretch:extra-condensed;
      }
     .contain{
         margin-right:21px;
