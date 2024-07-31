@@ -507,6 +507,9 @@ nav .fa-solid{
 .work-list{
     margin-right:22px;
 }
+    .work p{
+    font-size:0.4rem;
+}
 /* .sub-title {
     font-weight: 500;
 } */
