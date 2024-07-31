@@ -495,7 +495,7 @@ nav .fa-solid{
         font-family: cursive;
         font-weight: 40;
         font-size: 0.6rem;
-        font-stretch:extra-condensed;
+/*         font-stretch:extra-condensed; */
      }
     .contain{
         margin-right:21px;
