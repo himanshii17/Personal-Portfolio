@@ -15,12 +15,12 @@
   <div class="full">
     <nav id="navbar">
       <div id="container">
-        <h1 class="logo">PORTFOLIO</h1>
+        <h1 class="logo">Himanshi Sharma</h1>
       </div>
       <ul id="sidemenu" class="list-class">
         <li><a href="#container">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
+        <li><a href="#Skills">Skills</a></li>
         <li><a href="#portfolio">Projects</a></li>
         <li><a href="#contact">Contact</a></li> 
         <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
@@ -32,34 +32,73 @@
     <div class="container1">
       <div class="header-text">
         <div class="drop-words-container">
-          <div class="letter" data-letter="D">D</div>
-          <div class="letter" data-letter="E">E</div>
-          <div class="letter" data-letter="V">V</div>
-          <div class="letter" data-letter="E">E</div>
-          <div class="letter" data-letter="L">L</div>
-          <div class="letter" data-letter="O">O</div>
-          <div class="letter" data-letter="p">P</div>
-          <div class="letter" data-letter="E">E</div>
-          <div class="letter" data-letter="R">R</div>
+          <div class="letter" data-letter="De">W</div>
+          <div class="letter" data-letter="E">e</div>
+          <div class="letter" data-letter="V">l</div>
+          <div class="letter" data-letter="E">c</div>
+          <div class="letter" data-letter="L">o</div>
+          <div class="letter" data-letter="O">m</div>
+          <div class="letter" data-letter="p">e.</div>
+          <div class="letter" data-letter="E">.</div>
+          <div class="letter" data-letter="R">.!</div>
       </div>
         <!-- <p>Software Engineer</p> -->
-        <h1>Hi,I am <span>Himanshi</span><br>Sharma from India</h1>
+        <h1>Hi, I am <span>Himanshi</span><br><span>Sharma</span> from India</h1><br>
+         <!-- Element to contain animated typing -->
+						<div id="typing-animation"></div>
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Software Engineer  ',
+						'Web Developer ',
+						'Java Developer  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
       </div>
 
       <div id="image_bitemogi">
-        <img src="hi.png" alt="i am himanshi">
+        <img src="laptop wave (1).png" alt="i am himanshi">
       </div>
     </div>
   </div>
+
   <!-- about section -->
+
   <div id="about">
     <div class="container2">
       <div class="row">
         <div class="about-col-1">
-          <img src="image.jpeg" alt="himanshi">
+          <img src="profile.jpg" alt="himanshi">
         </div>
         <div class="about-col-2">
+          <div class="mediaq">
           <h1 class="sub-title">About Me</h1>
+        </div>
+        <div class="mediabout">
           <p>My name is Himanshi Sharma, and I am an undergraduate student pursuing a Bachelor of Technology in Computer Science and Engineering from DIT University, Dehradun. My academic journey has equipped me with a solid foundation in various aspects of computer science, and I am particularly passionate about programming and software development.
 
             Currently, I am actively working on real-time projects that span multiple domains, including Java development and full-stack development. These hands-on experiences have honed my technical skills and provided me with a deeper understanding of the software development lifecycle.
@@ -68,12 +107,15 @@
             
             I am eager to apply my knowledge and skills in professional settings, seeking opportunities that challenge me and contribute to my growth as a developer. I look forward to collaborating with like-minded professionals and making meaningful contributions to innovative projects.
           </p>
+        </div>
+        <div class="medialink">
           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <!-- <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> -->
+            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
             <p class="tab-links" onclick="opentab('experience')">Experience</p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
-          <div class="tab-contents active-tab" id="skills">
+        </div>
+          <!-- <div class="tab-contents active-tab" id="skills">
           <ul>
             <li><span>JAVA</span><br></li>
             <li><span>Javascript</span><br></li>
@@ -82,19 +124,19 @@
             <li><span>Leadership</span><br></li>
             <li><span>Management</span><br></li>
           </ul>
-          </div>
+          </div> -->
           <div class="tab-contents" id="experience">
             <ul>
-              <li><span>May'24 - Jun'24</span><br>Oasis Infobyte (Web Development and designing Internship)</li>
+              <li><span>May'24 - Jun'24 <a href="https://drive.google.com/file/d/17bPu7OOKrcVvjb47eGhh72tRmLGsG9Rh/view?usp=drive_link"><i class="fa-solid fa-link"></i></a></span><br>Oasis Infobyte (Web Development and designing Internship)</li>
               <!-- <li><span>Current</span><br>full stack and Devops training in dit university</li>
               <li><span>Current</span><br>full stack training in dit university</li> -->
             </ul>
             </div>
-            <div class="tab-contents" id="education">
+            <div class="tab-contents active-tab" id="education">
               <ul>
+                <li><span>DIT University</span><br>Btech in computer Science(2021-2025) CGPA: 9.35<br></li>
                 <li><span>GRD Academy</span><br>Class 12(2021) Aggregate:87.6% </li>
                 <li><span>GRD Academy</span><br>Class 10(2019) Aggregate:90% </li>
-                <li><span>DIT University</span>Btech in computer Science(2021-2025) CGPA: 9.35<br></li>
               </ul>
               </div>
           
@@ -104,7 +146,7 @@
   </div>
 
   <!--------------------------- services ---------------------------->
-  <div id="services">
+  <!-- <div id="services">
     <div class="contain">
       <h1 class="sub-title">My Services</h1>
       <div class="services-list">
@@ -128,12 +170,109 @@
         </div>
       </div>
     </div>
+  </div> -->
+  <div id="Skills">
+  <section id="skills1" class="skills1">
+    <div class="main-text">
+        <h2 class="sub-title">My Skills</h2>
+    </div>
+    <div class="skill-main">
+    <div class="skill-left">
+        <!-- <h3>Technical Skills</h3> -->
+        <div class="skill-bar">
+            <div class="info">
+                <p>HTML</p>
+                <p>99%</p>
+            </div>
+            <div class="bar">
+                <span class="html"></span>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <div class="info">
+                <p>CSS</p>
+                <p>90%</p>
+            </div>
+            <div class="bar">
+                <span class="css"></span>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <div class="info">
+                <p>Java</p>
+                <p>85%</p>
+            </div>
+            <div class="bar">
+                <span class="java"></span>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <div class="info">
+                <p>Javascript</p>
+                <p>70%</p>
+            </div>
+            <div class="bar">
+                <span class="Javascript"></span>
+            </div>
+        </div>
+        <div class="skill-bar">
+          <div class="info">
+              <p>React Js</p>
+              <p>50%</p>
+          </div>
+          <div class="bar">
+              <span class="React"></span>
+          </div>
+      </div>
+        <div class="skill-bar">
+            <div class="info">
+                <p>SQL</p>
+                <p>70%</p>
+            </div>
+            <div class="bar">
+                <span class="sql"></span>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="skill-right">
+      <div class="skill-main">
+        <div class="skill-right">
+            <h3>Interpersonal Skills</h3>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Leadership</p>
+                    <p>99%</p>
+                </div>
+                <div class="bar">
+                    <span class="leadership"></span>
+                </div>
+            </div>
+            <div class="skill-bar">
+              <div class="info">
+                  <p>Problem Solving</p>
+                  <p>95%</p>
+              </div>
+              <div class="bar">
+                  <span class="problem"></span>
+              </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+                <p>Desicion Making</p>
+                <p>90%</p>
+            </div>
+            <div class="bar">
+                <span class="decision"></span>
+            </div>
+        </div>
+            </div>
+  </div> -->
   </div>
-
+</div>
   <!-- ---------------------portfolio--------------- -->
   <div id="portfolio">
     <div class="contain">
-      <h1 class="sub-title">My Work</h1>
+      <h1 class="sub-title">My Projects</h1>
       <div class="work-list">
         <div class="work">
           <img src="image1.png">
@@ -174,7 +313,7 @@
           <p><i class="fa-solid fa-square-phone"></i>7017748803</p>
           <div class="social-icons">
             <a href="https://www.linkedin.com/in/himanshi-sharma-9623b8235/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/himanshii17"><i class="fa-brands fa-github"></i></a>
           </div>
           <a href="Himanshi Sharma Resume.pdf" download class="btn btn2">Download CV</a>
         </div>
@@ -193,13 +332,16 @@
   <div class="copyright">
     <p>Copyright © Himanshi . All Rights Reserved</p>
   </div>
+
+
+
   <script>
 document.addEventListener("DOMContentLoaded", () => {
     const letters = document.querySelectorAll(".letter");
     letters.forEach((letter, index) => {
         setTimeout(() => {
             letter.setAttribute("data-dropped", "true");
-        }, index * 200); // Adjust the timing to control the drop speed
+        }, index * 300); // Adjust the timing to control the drop speed
     });
 });
   </script>
